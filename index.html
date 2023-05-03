@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="veiwport" content ="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <form action="results.html" method="GET">
+            <div>
+                <label> Name: </label>
+                <input type="text" name="Name"  id="name" placeholder="User Name" required> 
+            </div>
+            <div>
+                <label> Email: </label> 
+                <input type="email" name="Email" id="email" placeholder="User Email" required>
+            </div>
+            <div>
+                <label> Password: </label>
+                <input type="password" name="Password" id="password" placeholder="Enter Password" required>
+            </div>
+            <div>
+                <label> Age: </label>
+                <input type="number" name="Age" id="age" placeholder="Enter Age" min="1" max ="35" required>
+            </div> 
+            <div>
+                <label> Birthdate: </label>
+                <input type="date" name="Date of Birth" id="date" placeholder="Enter Date of Birth" min = "2022-04-10" required>
+            </div>
+            <div>
+                Gender
+                <div>
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" id="male" value="male">
+                </div>
+                <div>
+                    <label for="Female">Female</label>
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                </div>
+            </div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form> 
+    </body>
+</html>
