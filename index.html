@@ -10,26 +10,38 @@
 
     <body>
         <form action="results.html" method="GET">
+            <!-- Email type name -->
             <div>
                 <label> Name: </label>
                 <input type="text" name="Name"  id="name" placeholder="User Name" required> 
             </div>
+
+            <!-- Email type input -->
             <div>
                 <label> Email: </label> 
                 <input type="email" name="Email" id="email" placeholder="User Email" required>
             </div>
+
+            <!-- Password type input -->
             <div>
                 <label> Password: </label>
                 <input type="password" name="Password" id="password" placeholder="Enter Password" required>
             </div>
+            
+
+            <!-- Number type input -->
             <div>
                 <label> Age: </label>
                 <input type="number" name="Age" id="age" placeholder="Enter Age" min="1" max ="35" required>
-            </div> 
+            </div>
+            
+            <!-- Date Input -->
             <div>
                 <label> Birthdate: </label>
                 <input type="date" name="Date of Birth" id="date" placeholder="Enter Date of Birth" min = "2022-04-10" required>
             </div>
+
+            <!-- Radio Input Type -->
             <div>
                 Gender
                 <div>
@@ -40,6 +52,35 @@
                     <label for="Female">Female</label>
                     <input type="radio" name="Gender" id="Female" value="Female">
                 </div>
+            </div>
+
+            <!-- Checkbox Input Type -->
+            <div>
+                Disabled
+                <div>
+                    <lable for="Yes">Yes</lable>
+                    <input type="checkbox" name="yes">
+                </div>
+                <div>
+                    <lable for="Yes">No</lable>
+                    <input type="checkbox" name="No">
+                </div>
+            </div>
+
+            <!-- Select Element -->
+            <div>
+                <label for="education">Education Level</label>
+                <select name="education" id="education">
+                    <option value="Tertiary">Tertiary</option>
+                    <option value="Secondary">Secondary</option>
+                    <option value="Primary">Primary</option>
+                </select>
+            </div>
+
+            <!-- textarea element -->
+            <div>
+                <lable for="bio">Bio</lable>
+                <textarea id="bio" name="Bio"></textarea>
             </div>
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
